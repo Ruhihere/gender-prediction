@@ -1,12 +1,11 @@
-/* ========== Global Styles ========== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f1f6ff;
     color: #333;
   }
-  
-  /* ========== Navbar ========== */
+
   .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #eee;
@@ -56,13 +55,13 @@ body {
     margin: 0;
     color: #2b6ef7;
   }
-  /* ========== Main Content ========== */
+  
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding: 100px 20px 40px; /* ⬅️ Add extra top padding */
+    padding: 100px 20px 40px; 
   }
   
   .text-section {
@@ -132,13 +131,13 @@ body {
     background-color: #27ae60;
   }
   
-  /* ========== Footer ========== */
+
   .footer {
-    background-color: #1e56f0; /* or whatever color you want */
+    background-color: #1e56f0; 
     color: white;
     text-align: center;
     padding: 20px 0;
-    width: 100vw; /* This is important */
+    width: 100vw; 
     position: relative;
     left: 0;
     right: 0;
@@ -231,7 +230,6 @@ body {
   margin-top: 10px;
 }
 
-  /* ========== Responsive ========== */
   @media (max-width: 768px) {
     .container {
       flex-direction: column;

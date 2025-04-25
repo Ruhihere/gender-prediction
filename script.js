@@ -30,7 +30,7 @@ const message = document.getElementById('message');
 let mode = null;
 let imageCaptured = false;
 
-// Handle Upload Image
+
 uploadBtn.addEventListener('click', () => {
   imageInput.click();
 });
@@ -55,7 +55,7 @@ imageInput.addEventListener('change', () => {
   }
 });
 
-// Handle Open Camera
+
 cameraBtn.addEventListener('click', async () => {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
@@ -66,7 +66,7 @@ cameraBtn.addEventListener('click', async () => {
     mode = 'camera';
     message.textContent = '';
 
-    // Capture image on click
+
     video.addEventListener('click', () => {
       const ctx = canvas.getContext('2d');
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -79,7 +79,7 @@ cameraBtn.addEventListener('click', async () => {
   }
 });
 
-// Handle Detect Gender Button
+
 detectBtn.addEventListener('click', () => {
   if (!mode) {
     message.textContent = 'Please select an image or open camera first.';
@@ -93,6 +93,6 @@ detectBtn.addEventListener('click', () => {
   }
 
   message.textContent = '';
-  // ➡️ Replace this with actual model logic
+ 
   alert('Gender detection logic goes here!');
 });
