@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FaceGender AI 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="navbar-container">
+      <div class="navbar-logo">
+        Face<span>Gender AI</span>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" id="home">
+    <section class="text-section">
+      <h2>Gender Classification with AI Face Detection</h2>
+      <p>
+        Upload an image or use your camera to instantly classify gender using our advanced machine learning model with state-of-the-art accuracy.
+      </p>
+      <div class="buttons">
+        <button class="btn" id="uploadBtn">⬆️ Upload Image</button>
+        <button class="btn" id="cameraBtn">📷 Open Camera</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <img src="1111.jpg" alt="Sample person" />
+      <button class="detect-btn" id="detectBtn">Detect Gender</button>
+      <!-- Place inside the <section class="card"> -->
+<input type="file" id="imageInput" accept="image/*" style="display: none;" />
+<video id="video" width="300" height="200" autoplay style="display: none;"></video>
+<canvas id="canvas" width="300" height="200" style="display: none;"></canvas>
+<p id="message" style="color: red; margin-top: 10px;"></p>
+
+    </section>
+  </main>
+
+  <!-- Additional Sections like Process, Contributors, etc. -->
+  <!-- You can break them into components if needed -->
+<!-- Process Section -->
+<section class="process-section">
+    <h2>The Process</h2>
+    <p class="section-subtitle">From input to accurate gender classification in three simple steps</p>
+    <div class="steps-container">
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <img src="https://img.icons8.com/ios/100/image--v1.png" alt="Upload" />
+        <h3>Upload or Capture</h3>
+        <p>Submit an image through file upload or use your device's camera.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <img src="https://img.icons8.com/ios/100/task.png" alt="Process" />
+        <h3>Face Processing</h3>
+        <p>Algorithms detect faces and extract key features for analysis.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <img src="https://img.icons8.com/ios/100/approval--v1.png" alt="Result" />
+        <h3>Results Delivery</h3>
+        <p>Get gender classification with confidence scores and insights.</p>
+      </div>
+    </div>
+    <button class="try-button">Try it Yourself →</button>
+  </section>
+  
+  <!-- Contributors Section -->
+  <section class="contributors-section">
+    <h2>Contributors</h2>
+    <p class="section-subtitle">Meet the talented team behind our gender classification system</p>
+    <div class="contributors-container">
+      <!-- Contributor Card Example -->
+      <div class="contributor-card">
+        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b" alt="Ruhi Parween">
+        <div class="card-body">
+          <strong>Ruhi Parween</strong>
+          <small>Frontend Developer</small>
+          <p>Creates intuitive UI/UX experiences for ML applications.</p>
+        </div>
+      </div>
+      <div class="contributor-card">
+        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b" alt="Ruhi Parween">
+        <div class="card-body">
+          <strong>Ruhi Parween</strong>
+          <small>Frontend Developer</small>
+          <p>Creates intuitive UI/UX experiences for ML applications.</p>
+        </div>
+      </div>
+      <div class="contributor-card">
+        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b" alt="Ruhi Parween">
+        <div class="card-body">
+          <strong>Ruhi Parween</strong>
+          <small>Frontend Developer</small>
+          <p>Creates intuitive UI/UX experiences for ML applications.</p>
+        </div>
+      </div>
+      <div class="contributor-card">
+        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b" alt="Ruhi Parween">
+        <div class="card-body">
+          <strong>Ruhi Parween</strong>
+          <small>Frontend Developer</small>
+          <p>Creates intuitive UI/UX experiences for ML applications.</p>
+        </div>
+      </div>
+      <!-- Repeat for other contributors -->
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 FaceGender AI. All rights reserved.</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
